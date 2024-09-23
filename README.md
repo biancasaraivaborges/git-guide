@@ -65,9 +65,27 @@ Committing Changes:
 Once staged, commit the changes with a message describing what you did:
 ```git commit -m "Descriptive commit message"```
 
+## Defining Multiple Authors for a Commit
+
+Each commit in Git has a default author, which is the person who made the changes to the code.
+
+However, when working in teams, some code may be written collaboratively by a pair or a group. So how do we define the co-authorship for these additional contributors in a commit?
+
+Git provides the ability to add multiple authors to a commit. To do this, after writing the commit message, skip two lines and use the keyword `Co-authored-by:`, followed by the name and the email associated with GitHub (within `< >`) of each co-author.
+
+Each co-author should be on a separate line, as shown in the example below:
+
+```bash
+$ git commit -m "Add new functionality.
+>
+>
+Co-authored-by: NAME <name@email.com>
+Co-authored-by: OTHER-NAME <other@email.com>"
+```
 ### 4. Checking the Status
 You can check the status of your repository to see which files have changed and which are staged for commit:
 ```git status```
+```
 
 ### 5. Viewing Commit History
 To see the commit history of your project, run:
