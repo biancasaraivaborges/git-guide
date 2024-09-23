@@ -85,7 +85,6 @@ Co-authored-by: OTHER-NAME <other@email.com>"
 ### 4. Checking the Status
 You can check the status of your repository to see which files have changed and which are staged for commit:
 ```git status```
-```
 
 ### 5. Viewing Commit History
 To see the commit history of your project, run:
@@ -141,3 +140,7 @@ To download the latest changes from the remote repository:
 | `git merge <branch>`         | Merges the given branch into the current branch    |
 | `git push origin <branch>`   | Pushes the current branch to the remote repository |
 | `git pull origin <branch>`   | Pulls the latest changes from the remote repository|
+
+## Ignoring Files with .gitignore
+
+Teach Git which files and/or directories in your project should be automatically ignored in version control by creating a hidden file called ```.gitignore```.
