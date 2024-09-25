@@ -144,3 +144,12 @@ To download the latest changes from the remote repository:
 ## Ignoring Files with .gitignore
 
 Teach Git which files and/or directories in your project should be automatically ignored in version control by creating a hidden file called ```.gitignore```.
+The ```.gitignore``` is a simple text file that tells Git which files and folders to exclude from version control, keeping your repository clean, organized, and secure.
+
+### Quick Guide to Create a .gitignore in VS Code:
+Open the Project Folder: Launch VS Code and navigate to your project's root folder.
+Create the ```.gitignore``` File: Go to "File" > "New File", name it .gitignore, and press Enter.
+Add Ignore Patterns: List the files or folders to ignore, one per line. For example:
+node_modules/: Ignore Node.js modules.
+/env: Ignore environment variable files.
+*.log: Ignore all log files.
